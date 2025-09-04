@@ -1,14 +1,32 @@
-# updated website
+# Personal Website
 
-This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+This is my personal website built with **Jekyll** and hosted on GitHub Pages. The design is based on [Jon Barron's website](https://jonbarron.info/) and uses the **Jekyll Now** theme from [this repository](https://github.com/barryclark/jekyll-now).
 
-The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use, re-purposing my old markdown posts. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
+## Features
 
+- Clean, responsive design
+- Project showcase with categories
+- Blog posts support
+- Social media integration
+- Easy to customize and maintain
 
+## Setup
 
-## issues
-* In general, jekyll will try to build a full page for every post. I skip that by forcing `permalink: /`. This creates multiple entries in sitemap.xml for index.html but is otherwise fine. 
-* If you want multiple paragraphs, consider using `excerpt_separator: <!--more-->` in `_config.yml`, for my own use I didn't need this. 
-* My own posts have lots of extra stuff left over from my old jekyll design ("author", long descriptions, etc.), feel free to ignore them
-* I use thumbnails, so I can upload arbitrary sized images but then only display small ones. The `_make_thumbnails.sh` script generates them and the html template looks in `tn/` for all images. 
-* I have three categories of post with slightly differerent formatting, so changing sizing requires edits in multiple paces. 
+1. Fork this repository
+2. Update `_config.yml` with your personal information
+3. Replace the content in `_layouts/default.html` with your own bio
+4. Add your own posts to the `_posts` directory
+5. Replace images in the `images` folder with your own
+6. Update the CNAME file if you have a custom domain
+
+## Customization
+
+- **Name and Bio**: Edit `_config.yml` and `_layouts/default.html`
+- **Social Links**: Update the footer-links section in `_config.yml`
+- **Posts**: Add markdown files to `_posts` directory with proper front matter
+- **Images**: Replace images in the `images` folder and update references
+- **Styling**: Modify `style.scss` for custom styling
+
+## License
+
+This template is free to use for personal websites. Please respect copyright for any content you didn't create. 
